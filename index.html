@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator</title>
+</head>
+<body>
+
+<!-- main body -->
+<div id="body">
+
+    <!-- screen displaying numbers -->
+    <div id="screen"></div>
+
+    <!-- the body containing numbers buttons -->
+    
+<div class="bodyContainer">
+
+    <div class="first-column">
+        <button id="erase" onclick="erase()">c</button>
+
+        <div class="first-row">
+            <button id="one" onkeydown="press(event)" onclick="one()">1</button>
+            <button id='two' onkeydown="press(event)" onclick="two()">2</button>
+            <button id='three' onkeydown="press(event)" onclick="three()">3</button>
+        </div>
+          
+        <div class="second-row">
+            <button id='four' onkeydown="press(event)" onclick="four()">4</button>
+            <button id='five' onkeydown="press(event)" onclick="five()">5</button>
+            <button id='six' onkeydown="press(event)" onclick="six()">6</button>
+        </div>
+                
+        <div class="third-row">
+            <button id='seven'onkeydown="press(event)" onclick="seven()">7</button>
+            <button id='eight' onkeydown="press(event)" onclick="eight()">8</button>
+            <button id= 'nine' onkeydown="press(event)" onclick="nine()">9</button>
+        </div>
+           <div class="fourth-row">
+            <button id='zero' onkeydown="press(event)" onclick="zero()">0</button>    
+        </div>   
+    </div>
+    
+
+    <div class="second-column">
+        <div class="operators">
+            <button id='add' onclick="add()">+</button>
+            <button id='subtract' onkeydown="press(event)" onclick="subtract()">-</button>
+            <button id= 'multiply' onkeydown="press(event)" onclick="multiply()">x</button>
+            <button id= 'division' onkeydown="press(event)" onclick="divide()">/</button>
+            <button id= 'equal' onkeydown="press(event)" onclick="equal()" >=</button>
+
+        </div>
+    </div>
+    
+</div>
+
+</div>
+
+</body>
+<script src="script.js"></script>
+
+</html>
